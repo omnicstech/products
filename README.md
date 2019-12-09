@@ -1,37 +1,60 @@
-## Welcome to GitHub Pages
+## Fur
 
-You can use the [editor on GitHub](https://github.com/omnicstech/products/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+E-commerce template for Jekyll. Browse through a [live demo](https://turquoise-rook.cloudvent.net).
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+![Fur template screenshot](images/_screenshot.png)
 
-### Markdown
+Fur was made by [CloudCannon](http://cloudcannon.com/), the Cloud CMS for Jekyll.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Find more templates, themes and Jekyll tutorials at [CloudCannon Academy](https://learn.cloudcannon.com/).
 
-```markdown
-Syntax highlighted code block
+## Features
 
-# Header 1
-## Header 2
-### Header 3
+* List product with multiple colours and sizes
+* Take payment online using SnipCart
+* Contact form
+* Optimised for editing in [CloudCannon](http://cloudcannon.com/)
+* RSS/Atom feed
+* SEO tags
+* Google Analytics
 
-- Bulleted
-- List
+## Setup
 
-1. Numbered
-2. List
+1. Add your site and author details in `_config.yml`.
+2. Add your Google Analytics, Google Maps API key and [SnipCart key](https://snipcart.com/) to `_config.yml`.
+3. Get a workflow going to see your site's output (with [CloudCannon](https://app.cloudcannon.com/) or Jekyll locally).
 
-**Bold** and _Italic_ and `Code` text
+## Develop
 
-[Link](url) and ![Image](src)
-```
+Fur was built with [Jekyll](http://jekyllrb.com/) version 3.4.3, but should support newer versions as well.
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+Install the dependencies with [Bundler](http://bundler.io/):
 
-### Jekyll Themes
+~~~bash
+$ bundle install
+~~~
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/omnicstech/products/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+Run `jekyll` commands through Bundler to ensure you're using the right versions:
 
-### Support or Contact
+~~~bash
+$ bundle exec jekyll serve
+~~~
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+## Editing
+
+Fur is already optimised for adding, updating and removing products and editing the navigation and footer in CloudCannon.
+
+### Posts
+
+* Add, update or remove a post in the *Posts* collection.
+* Change the defaults when new posts are created in `_posts/_defaults.md`.
+
+### Navigation
+
+* Exposed as a data file to give clients better access.
+* Set in the *Data* / *Navigation* section.
+
+### Footer
+
+* Exposed as a data file to give clients better access.
+* Set in the *Data* / *Footer* section.
